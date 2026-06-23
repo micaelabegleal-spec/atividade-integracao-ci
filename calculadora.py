@@ -1,13 +1,9 @@
-class Calculadora:
+print("Calculadora simples")
 
-    def somar(self, a, b):
-        return a + b
+n1 = float(input("Digite o primeiro número: "))
+n2 = float(input("Digite o segundo número: "))
 
-    def subtrair(self, a, b):
-        return a - b
-
-
-calc = Calculadora()
-
-print("2 + 3 =", calc.somar(2, 3))
-print("5 - 2 =", calc.subtrair(5, 2))
+print("Soma:", n1 + n2)
+print("Subtração:", n1 - n2)
+print("Multiplicação:", n1 * n2)
+print("Divisão:", n1 / n2 if n2 != 0 else "Erro: divisão por zero")
