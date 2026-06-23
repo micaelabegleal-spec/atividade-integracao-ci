@@ -1,2 +1,18 @@
-# atividade-integracao-ci
-Projeto de Integração Contínua utilizando Python, testes unitários e GitHub Actions.
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run script
+        run: python calculadora.py
