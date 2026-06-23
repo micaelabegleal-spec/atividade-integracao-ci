@@ -1,9 +1,9 @@
 print("Calculadora simples")
 
-n1 = float(input("Digite o primeiro número: "))
-n2 = float(input("Digite o segundo número: "))
+n1 = 10
+n2 = 2
 
 print("Soma:", n1 + n2)
 print("Subtração:", n1 - n2)
 print("Multiplicação:", n1 * n2)
-print("Divisão:", n1 / n2 if n2 != 0 else "Erro: divisão por zero")
+print("Divisão:", n1 / n2 if n2 != 0 else "Erro")
